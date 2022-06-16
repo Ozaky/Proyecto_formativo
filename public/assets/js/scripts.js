@@ -1,3 +1,4 @@
+
 $(function () {
 
     $("#frmRegistrar").submit(function () {
@@ -13,6 +14,36 @@ $(function () {
             );
             $('#frmRegistrar').trigger("reset");
         }, 'json');
+
+        return false;
+
+    });
+
+    $("#frmRegistrarU").submit(function () {
+        
+        var url = $(this).attr("action");
+        var datos = $(this).serialize();
+        
+        if(frmRegistroU()){
+
+            $.post(url, datos, function (e) {
+
+                Swal.fire(
+                    e.alt,
+                    e.mensaje,
+                    e.icono
+                ).then((result) => {
+                    if (result.isConfirmed) {
+                        location.href="?controlador=inicio&accion=frmLogin"
+                    }
+                  });
+                $('#frmRegistrar').trigger("reset");
+            }, 'json');
+    
+            return false;
+            //respuesta del formulario de registro de usuario            
+           
+        }       
 
         return false;
 
@@ -272,10 +303,9 @@ function mostrar(){
       contenido = contenido +" "+ item;
       acum = acum + (v.cantidad*v.precio);
     }
-    
 
     document.getElementById("detalle").innerHTML = contenido;
-    if (acum==0)
+	 if (acum==0)
 	  {
       		 document.getElementById("pedido").style.display ="none";
   	  }
@@ -286,14 +316,5 @@ function mostrar(){
     
     
 }
-
-
-
-
-    
-    
-
-
-
 
 

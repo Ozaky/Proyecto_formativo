@@ -21,7 +21,6 @@
                             <th>Apellido</th>
                             <th>Telefono</th>
                             <th>Usuario</th>
-                            <th>Fecha Registro</th>
                             <th>Rol</th>
                             <th></th>
                             <th></th>
@@ -35,8 +34,6 @@
                                     echo  "<td>".$valor["Usu_Apellido"]."</td>";
                                     echo  "<td>".$valor["Usu_Telefono"]."</td>";
                                     echo  "<td>".$valor["Usu_Usuario"]."</td>";
-                                    echo  "<td>".$valor["Usu_Fecha"]."</td>";
-                                    //echo  "<td>".$valor["Usu_Email"]."</td>";
                                     echo  "<td>".$valor["Usu_Rol"]."</td>";
                                     echo  "<td>
                                         <a class='btn btn-primary' href='?controlador=usuarios&accion=frmEditar&cod=$cod'>Editar</a>

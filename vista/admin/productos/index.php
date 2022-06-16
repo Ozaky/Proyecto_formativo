@@ -21,9 +21,9 @@
                         <th>Precio</th>
                         <th>Categoria</th>
                         <th>Detalle</th>
-                        
                         <th>Estado</th>
                         <th>Foto Producto</th>
+                        <th></th>
                         <th></th>
                     </tr>
 
@@ -39,7 +39,7 @@
                                 echo  "<td>".$valor["Pro_Detalle"]."</td>";
                                // echo  "<td>".$valor["Pro_Descripcion"]."</td>";
                                 echo  "<td>".$valor["Pro_Estado"]."</td>";
-                                echo  "<td><img src='public/assets/img/fotos_productos/$foto' width='70%'</td>";
+                                echo  "<td><img style='box-shadow: rgba(0, 0, 0, 0.40)  0px 2.8px 7px 3px;' src='public/assets/img/fotos_productos/$foto' width='70%'</td>";
                                 echo  "<td>
                                     <a class='btn btn-primary' href='?controlador=productos&accion=frmEditar&cod=$cod'>Editar</a>
                                     </td>";

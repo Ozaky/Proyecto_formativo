@@ -54,46 +54,46 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <form role="form" class="text-start abc" action="?controlador=usuarios&accion=registrar" method="post" id="frmRegistrar">
+                                <form role="form" class="text-start" action="?controlador=usuarios&accion=registrar" method="post" id="frmRegistrarU">
                                     <div class="row">
                                         <div class="col-lg-6 formulario__grupo">
-                                            <div class="input-group input-group-static my-3">
+                                            <div class="input-group input-group-outline my-3">
                                                 <label class="form-label">Cedula</label>
-                                                <input min="999999"  type="number" name="usu_cedula" class="form-control" required>
+                                                <input id="cedulaa" type="number" name="usu_cedula" class="form-control" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 formulario__grupo">
-                                            <div class="input-group input-group-static my-3">
+                                            <div class="input-group input-group-outline my-3">
                                                 <label class="form-label">Nombres</label>
-                                                <input id="nombre" minlength="3" maxlength="15" type="text" name="usu_nombre" class="form-control" required>
+                                                <input id="nombre" type="text" name="usu_nombre" class="form-control" required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-6 formulario__grupo">
-                                            <div class="input-group input-group-static my-3">
+                                            <div class="input-group input-group-outline my-3">
                                                 <label class="form-label">Apellidos</label>
-                                                <input id="apellido" minlength="3" maxlength="20" type="text" name="usu_apellido" class="form-control" required>
+                                                <input id="apellido" type="text" name="usu_apellido" class="form-control" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 formulario__grupo">
-                                            <div class="input-group input-group-static my-3">
+                                            <div class="input-group input-group-outline my-3">
                                                 <label class="form-label">Telefono</label>
-                                                <input type="number" min="999999999" max="9999999999" title="El numero de telefono debe tener minimo 10 caracteres" id="telefono" name="usu_telefono" class="form-control" required>
+                                                <input type="number" id="telefono" name="usu_telefono" class="form-control" required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-6 formulario__grupo">
-                                            <div class="input-group input-group-static my-3">
+                                            <div class="input-group input-group-outline my-3">
                                                 <label class="form-label">Usuario</label>
-                                                <input type="text" minlength="3" maxlength="15" id="usuaru" name="usu_usuario" class="form-control" required>
+                                                <input type="text" id="usuaru" name="usu_usuario" class="form-control" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 formulario__grupo">
-                                            <div class="input-group input-group-static my-3">
+                                            <div class="input-group input-group-outline my-3">
                                                 <label class="form-label">Contraseña</label>
-                                                <input type="password" minlength="3" maxlength="20" id="contraseña" name="usu_contraseña" class="form-control" required>
+                                                <input type="password" id="contraseña" name="usu_contraseña" class="form-control" required>
                                             </div>
                                         </div>
                                     </div>
@@ -104,7 +104,7 @@
                                                 <input type="datetime-local" name="usu_fecha" class="form-control" required>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 formulario__grupo">
+                                        <div class="col-lg-6" formulario__grupo>
                                             <div class="input-group input-group-static my-3">
                                                 <label>Email</label>
                                                 <input type="email" id="email" name="usu_email" class="form-control" required>
@@ -123,11 +123,6 @@
             </div>
         </div>
     </main>
-<style>
-   input:valid {
-  border: 2px solid green;
-}
-</style>
 
     <!--   Core JS Files   -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -152,7 +147,5 @@
     <script src="recursos\validaciones.js"></script>
     <script Type="text/javascript" src="public/assets/js/scripts.js"></script>
 </body>
-
-
 
 </html>
